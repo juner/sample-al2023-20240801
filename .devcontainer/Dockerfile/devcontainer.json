@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+{
+    "name": "sample-al2023 - Dockerfile",
+    "runArgs": [
+        "--name",
+        "sample-al2023-dockerfile"
+    ],
+    "build": {
+        "dockerfile": "../../.container/python/Dockerfile",
+        "args": {
+            "VARIANT": "2023",
+            "PYTHON_VERSION": "3.11.7"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.black-formatter",
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "azemoh.one-monokai",
+                "vscode-icons-team.vscode-icons",
+                "eamodio.gitlens"
+            ]
+        }
+    },
+    "remoteUser": "ec2-user"
+}

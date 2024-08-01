@@ -1,0 +1,23 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+{
+    "name": "sample-al2023 - Compose",
+    "dockerComposeFile": [
+        "../../compose.yml"
+    ],
+    "workspaceFolder": "/workspaces/webmain/sample-al2023",
+    "service": "python",
+    "overrideCommand": true,
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-python.black-formatter",
+                "ms-python.vscode-pylance",
+                "ms-python.python",
+                "azemoh.one-monokai",
+                "vscode-icons-team.vscode-icons",
+                "eamodio.gitlens"
+            ]
+        }
+    },
+    "remoteUser": "ec2-user"
+}

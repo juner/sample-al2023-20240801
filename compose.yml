@@ -1,0 +1,11 @@
+services:
+  python:
+    build:
+      context: ./.container/python
+      args:
+        VARIANT: "2023"
+        PYTHON_VERSION: "3.11.7"
+    volumes:
+      - ./:/workspaces/webmain/sample-al2023
+    restart: unless-stopped
+    tty: true
